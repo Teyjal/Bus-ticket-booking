@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(180deg,#0b2431 0%, #15394a 60%, #f7f9fb 100%);
+  min-height:100vh;
+  color:#123;
+}
+
+/* Header / Navbar */
+.header{
+  background: rgba(255,255,255,0.06);
+  backdrop-filter: blur(6px);
+  padding:14px 28px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  position:sticky;
+  top:0;
+  z-index:50;
+  border-bottom:1px solid rgba(255,255,255,0.06);
+}
+.brand{display:flex;gap:12px;align-items:center;color:#fff}
+.logo{
+  width:48px;height:48px;border-radius:8px;
+  background: linear-gradient(135deg,#ffb347,#ffcc33);
+  display:flex;align-items:center;justify-content:center;font-weight:700;color:#052;
+  box-shadow:0 6px 18px rgba(2,8,23,0.35);
+}
+.nav-links a{color:rgba(255,255,255,0.9);text-decoration:none;margin-left:18px;font-weight:600}
+.container{max-width:1100px;margin:28px auto;padding:0 18px}
+
+/* Hero / Search */
+.hero{background: linear-gradient(90deg, rgba(255,255,255,0.03), rgba(255,255,255,0.01)); padding:36px;border-radius:12px;color:#fff;box-shadow:0 10px 30px rgba(2,8,23,0.35)}
+.search-row{display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+.input,select{padding:12px 14px;border-radius:10px;border:1px solid rgba(255,255,255,0.12);background:rgba(255,255,255,0.04);color:#fff;min-width:160px}
+.btn-primary{background:linear-gradient(90deg,#ffb347,#ffcc33);border:none;padding:12px 18px;border-radius:10px;font-weight:700;cursor:pointer;color:#042;box-shadow:0 8px 20px rgba(255,180,60,0.18)}
+.small-muted{color:rgba(255,255,255,0.7);font-size:13px;margin-top:8px}
+
+/* Cards */
+.list-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:18px;margin-top:22px}
+.card{background:linear-gradient(180deg,rgba(255,255,255,0.06),rgba(255,255,255,0.03));padding:18px;border-radius:12px;color:#fff;border:1px solid rgba(255,255,255,0.06)}
+.card h3{margin:0 0 6px 0}
+.meta{display:flex;justify-content:space-between;align-items:center;margin-top:10px}
+.pill{background:rgba(255,255,255,0.06);padding:8px 12px;border-radius:999px;font-weight:600}
+
+/* seat map */
+.seat-map{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.seat{width:46px;height:46px;border-radius:8px;display:flex;align-items:center;justify-content:center;background:rgba(255,255,255,0.03);cursor:pointer;border:2px solid rgba(255,255,255,0.03)}
+.seat.selected{background:linear-gradient(90deg,#6ee7b7,#34d399);color:#052;font-weight:700;border-color:rgba(0,0,0,0.1)}
+.seat.booked{background:#d1d5db;color:#6b7280;cursor:not-allowed}
+
+/* form */
+.form{max-width:640px;margin:20px auto;background:rgba(255,255,255,0.02);padding:18px;border-radius:10px}
+.row{display:flex;gap:12px;flex-wrap:wrap}
+.input-field{flex:1;min-width:180px;margin-top:12px}
+label{display:block;font-size:13px;color:rgba(255,255,255,0.9);margin-bottom:6px}
+input[type="text"],input[type="email"],input[type="tel"],select{width:100%;padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.08);background:rgba(255,255,255,0.02);color:#fff}
+
+/* confirmation */
+.confirm{max-width:700px;margin:30px auto;background:linear-gradient(180deg,rgba(255,255,255,0.04),rgba(255,255,255,0.02));padding:20px;border-radius:12px;text-align:left;color:#fff}
+.success{display:inline-block;background:#16a34a;color:#fff;padding:6px 10px;border-radius:8px;font-weight:700;margin-bottom:10px}
+
+/* footer */
+.footer{margin-top:60px;text-align:center;color:rgba(255,255,255,0.6);padding:20px 0}
+
+/* responsive */
+@media(max-width:720px){
+  .search-row{flex-direction:column}
+  .meta{flex-direction:column;align-items:flex-start;gap:8px}
+  .nav-links{display:none}
+}

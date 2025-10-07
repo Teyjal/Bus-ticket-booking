@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "name": "Volvo Seater AC",
+    "from": "City A",
+    "to": "City B",
+    "time": "08:00 AM",
+    "seats": 30,
+    "price": 650
+  },
+  {
+    "id": 2,
+    "name": "Express Sleeper",
+    "from": "City A",
+    "to": "City C",
+    "time": "09:30 AM",
+    "seats": 20,
+    "price": 900
+  },
+  {
+    "id": 3,
+    "name": "Superfast Volvo",
+    "from": "City B",
+    "to": "City C",
+    "time": "01:15 PM",
+    "seats": 15,
+    "price": 550
+  },
+  {
+    "id": 4,
+    "name": "Greenline Deluxe",
+    "from": "City A",
+    "to": "City B",
+    "time": "06:45 PM",
+    "seats": 10,
+    "price": 700
+  },
+  {
+    "id": 5,
+    "name": "Comfort Coach",
+    "from": "City B",
+    "to": "City D",
+    "time": "11:00 AM",
+    "seats": 25,
+    "price": 480
+  }
+]
